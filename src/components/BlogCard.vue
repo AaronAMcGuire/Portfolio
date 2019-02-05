@@ -36,6 +36,8 @@ border-radius:5px;
     background:rgb(255,255,255);
     min-height: 120px;
     position: relative;
+     border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .blog-card-image{
     background:rgb(230,230,230);
@@ -59,6 +61,7 @@ border-radius:5px;
     right:25px;
     background-color:rgb(200,200,200);
     overflow: hidden;
+    box-shadow: 0 20px 30px 0 rgba(33,55,87,0.22);
 }
 .blog-card-content__author img{
     width:100%;

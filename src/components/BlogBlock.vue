@@ -52,15 +52,17 @@ export default {
 }
 
 .blog-card__more{
-    padding:15px 25px;
+    padding:20px;
     color:rgb(255,255,255);
     background-color:#5319e1;
-    border-radius:8px;
+    border-radius:5px;
     text-decoration:none;
     margin-right:45px;
     float:right;
     width:180px;
     position:relative;
+    font-weight: 600;
+    font-family: "Karla-Bold";
 } 
 
 .blog-card__more svg{

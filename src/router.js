@@ -24,19 +24,25 @@ export default new Router({
       path: "/work",
       name: "work",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Work.vue")
+        import(/* webpackChunkName: "work" */ "./views/Work.vue")
     },
     {
       path: "/blog",
       name: "blog",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Blog.vue")
+        import(/* webpackChunkName: "blog" */ "./views/Blog.vue")
     },
     {
       path: "/contact",
       name: "contact",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Contact.vue")
+        import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
+    },
+    {
+    path:'/blog/:post',
+    name:'post',
+    component: () =>
+        import(/*webpackChunkName: "post" */ "./views/Post.vue")
     }
   ]
 });
