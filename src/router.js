@@ -15,7 +15,7 @@ export default new Router({
         metaTags: [
           {
             name: " description ",
-            content: " Test "
+            content: "  "
           }
         ]
       }
@@ -27,28 +27,65 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+        import(/* webpackChunkName: "about" */ "./views/About.vue"),
+        meta: {
+          title: "About Aaron McGuire | Front End Website Developer From Stockport ",
+          metaTags: [
+            {
+              name: " description ",
+              content: "  "
+            }
+          ]
+        }
     },
     {
       path: "/work",
       name: "work",
-      component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue")
+      component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue"),
+      meta: {
+        title: "Aarons Latest Projects | Front End Website Developer From Stockport ",
+        metaTags: [
+          {
+            name: " description ",
+            content: "  "
+          }
+        ]
+      }
     },
     {
       path: "/blog",
       name: "blog",
-      component: () => import(/* webpackChunkName: "blog" */ "./views/Blog.vue")
+      component: () => import(/* webpackChunkName: "blog" */ "./views/Blog.vue"),
+      meta: {
+        title: "All of Aarons latest articles | Front End Website Developer From Stockport ",
+        metaTags: [
+          {
+            name: " description ",
+            content: "  "
+          }
+        ]
+      }
     },
     {
       path: "/contact",
       name: "contact",
       component: () =>
-        import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
+        import(/* webpackChunkName: "contact" */ "./views/Contact.vue"),
+        meta: {
+          title: "Get in contact with Aaron | Front End Website Developer From Stockport ",
+          metaTags: [
+            {
+              name: " description ",
+              content: "  "
+            }
+          ]
+        }
     },
     {
       path: "/blog/:post",
       name: "post",
       component: () => import(/*webpackChunkName: "post" */ "./views/Post.vue")
+      
     }
   ]
 });
