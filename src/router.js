@@ -9,7 +9,16 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: {
+        title: "Aaron McGuire Front End Website Developer | Stockport Based",
+        metaTags: [
+          {
+            name: " description ",
+            content: " Test "
+          }
+        ]
+      }
     },
     {
       path: "/about",
@@ -23,14 +32,12 @@ export default new Router({
     {
       path: "/work",
       name: "work",
-      component: () =>
-        import(/* webpackChunkName: "work" */ "./views/Work.vue")
+      component: () => import(/* webpackChunkName: "work" */ "./views/Work.vue")
     },
     {
       path: "/blog",
       name: "blog",
-      component: () =>
-        import(/* webpackChunkName: "blog" */ "./views/Blog.vue")
+      component: () => import(/* webpackChunkName: "blog" */ "./views/Blog.vue")
     },
     {
       path: "/contact",
@@ -39,10 +46,9 @@ export default new Router({
         import(/* webpackChunkName: "contact" */ "./views/Contact.vue")
     },
     {
-    path:'/blog/:post',
-    name:'post',
-    component: () =>
-        import(/*webpackChunkName: "post" */ "./views/Post.vue")
+      path: "/blog/:post",
+      name: "post",
+      component: () => import(/*webpackChunkName: "post" */ "./views/Post.vue")
     }
   ]
 });
