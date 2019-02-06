@@ -38,13 +38,27 @@
     </div>
     <p class='home-hero-lower__body home-hero-lower__body--first'>Currently Working at Pixel Kicks as a Web Developer</p>
     <p class='home-hero-lower__body'>Working as a Freelance WordPress Developer in my spare time</p>
+   
     </div>
     </div>
   </section>
 </template>
 
 <script>
-export default{}
+import db from '../firebase.js';
+
+export default{
+  methods:{
+
+  },
+  created(){
+    this.$http.get('https://aaronmcguireportfolio.firebaseio.com/v1uKxRPMeSLOF0DcJCgX').then(function(data){
+      console.log(data);
+    })
+  }
+}
+
+
 </script>
 <style scoped>
 .home-hero {

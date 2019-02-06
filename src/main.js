@@ -1,10 +1,13 @@
 import Vue from "vue";
+import VueResource from 'vue-resource';
 import App from "./App.vue";
 import router from "./router";
 
 Vue.config.productionTip = false;
+Vue.use(VueResource)
 
 
+// handling updating metadata
 router.beforeEach((to, from, next) => {
  
   const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
