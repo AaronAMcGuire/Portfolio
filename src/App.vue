@@ -98,6 +98,12 @@ h1,h2,h3,h4,h5,h6{
   background-color:#4013b0;
   transition:.3s ease;
 }
+
+#nav .router-link-exact-active{
+  color:rgb(255,255,255);
+  padding-bottom:5px;
+  border-bottom:2px solid rgb(255,255,255);
+}
 header{
   display:flex;
   align-items:center;

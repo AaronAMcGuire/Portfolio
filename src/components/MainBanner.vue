@@ -2,7 +2,7 @@
  <section class='home-hero'>
    <div class='container container-content'>
      <div class='home-hero-content'>
-       <h1 class='home-hero__title'>Stockport based Website Developer</h1>
+       <h1 class='home-hero__title'>Stockport Based Web Developer</h1>
        <div class='home-hero-info'>
         <div class='home-hero-info__left'>
          <a class='home-hero-info__button' href='' title=''>Read About Me <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-export default {}
+export default{}
 </script>
 <style scoped>
 .home-hero {
