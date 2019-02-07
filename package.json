@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "firebase": "^5.8.2",
+    "firestore": "^1.1.6",
     "prismic-vue": "^1.3.0",
     "vue": "^2.5.22",
     "vue-resource": "^1.5.1",

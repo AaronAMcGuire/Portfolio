@@ -45,16 +45,20 @@
 </template>
 
 <script>
-import db from '../firebase.js';
+import {db} from '../firebase.js';
 
 export default{
   methods:{
 
   },
-  created(){
-    this.$http.get('https://aaronmcguireportfolio.firebaseio.com/v1uKxRPMeSLOF0DcJCgX').then(function(data){
-      console.log(data);
-    })
+  firebase: {
+    users: {
+      source: db.ref('users'),
+      // Optional, allows you to handle any errors.
+      cancelCallback(err) {
+        console.error(err);
+      }
+    }
   }
 }
 
